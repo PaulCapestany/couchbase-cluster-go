@@ -1,7 +1,7 @@
 
 FROM ubuntu:14.04
 
-MAINTAINER Traun Leyden <tleyden@couchbase.com>
+MAINTAINER Paul Capestany <capestany@gmail.com>
 
 ENV GOPATH /opt/go
 ENV GOROOT /usr/local/go
