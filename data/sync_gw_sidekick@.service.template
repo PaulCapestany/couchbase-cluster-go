@@ -12,8 +12,8 @@ TimeoutStartSec=0
 EnvironmentFile=/etc/environment
 ExecStartPre=-/usr/bin/docker kill sync-gw-sidekick
 ExecStartPre=-/usr/bin/docker rm sync-gw-sidekick
-ExecStartPre=/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:{{ .CONTAINER_TAG }}
-ExecStart=/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host tleyden5iwx/couchbase-cluster-go:{{ .CONTAINER_TAG }} update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'
+ExecStartPre=/usr/bin/docker pull paulcapestany/couchbase-cluster-go:{{ .CONTAINER_TAG }}
+ExecStart=/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host paulcapestany/couchbase-cluster-go:{{ .CONTAINER_TAG }} update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'
 ExecStop=/usr/bin/docker stop sync-gw-sidekick
 
 [X-Fleet]

@@ -40,6 +40,6 @@ RUN git clone https://github.com/fgimenez/.emacs.d.git /root/.emacs.d && \
     git checkout origin/go
 
 # Install couchbase-cluster-go
-RUN godep get github.com/tleyden/couchbase-cluster-go/...
+RUN godep get github.com/paulcapestany/couchbase-cluster-go/...
 
 

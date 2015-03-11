@@ -184,7 +184,7 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"-/usr/bin/docker pull tleyden5iwx/cbfs"
+                    "value":"-/usr/bin/docker pull paulcapestany/cbfs"
                 },
                 {
                     "name":"ExecStartPre",
@@ -194,7 +194,7 @@
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host tleyden5iwx/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
+                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host paulcapestany/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
                 },
                 {
                     "name":"ExecStop",
@@ -242,7 +242,7 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"-/usr/bin/docker pull tleyden5iwx/cbfs"
+                    "value":"-/usr/bin/docker pull paulcapestany/cbfs"
                 },
                 {
                     "name":"ExecStartPre",
@@ -252,7 +252,7 @@
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host tleyden5iwx/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
+                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host paulcapestany/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
                 },
                 {
                     "name":"ExecStop",
@@ -300,7 +300,7 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"-/usr/bin/docker pull tleyden5iwx/cbfs"
+                    "value":"-/usr/bin/docker pull paulcapestany/cbfs"
                 },
                 {
                     "name":"ExecStartPre",
@@ -310,7 +310,7 @@
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host tleyden5iwx/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
+                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host paulcapestany/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
                 },
                 {
                     "name":"ExecStop",
@@ -358,7 +358,7 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"-/usr/bin/docker pull tleyden5iwx/cbfs"
+                    "value":"-/usr/bin/docker pull paulcapestany/cbfs"
                 },
                 {
                     "name":"ExecStartPre",
@@ -368,7 +368,7 @@
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host tleyden5iwx/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
+                    "value":"/bin/bash -c 'COUCHBASE_SERVER_IP=$(/opt/bin/etcdctl-get-first /couchbase.com/couchbase-node-state) \u0026\u0026 docker run --name cbfs --env-file /etc/environment -v /var/lib/cbfs/data:/var/lib/cbfs/data --net=host paulcapestany/cbfs bash -c \"refresh-cbfs feature/tleyden; cbfs -nodeID=${COREOS_PRIVATE_IPV4} -bucket=cbfs -couchbase=http://${COUCHBASE_SERVER_IP}:8091/ -root=/var/lib/cbfs/data -viewProxy\"'"
                 },
                 {
                     "name":"ExecStop",
@@ -441,22 +441,22 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-server-3.0.1:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-server-3.0.1:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host tleyden5iwx/couchbase-server-3.0.1:latest couchbase-start'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host paulcapestany/couchbase-server-3.0.1:latest couchbase-start'"
                 },
                 {
                     "name":"ExecStop",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
                 },
                 {
                     "name":"Conflicts",
@@ -524,22 +524,22 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-server-3.0.1:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-server-3.0.1:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host tleyden5iwx/couchbase-server-3.0.1:latest couchbase-start'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host paulcapestany/couchbase-server-3.0.1:latest couchbase-start'"
                 },
                 {
                     "name":"ExecStop",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
                 },
                 {
                     "name":"Conflicts",
@@ -607,22 +607,22 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-server-3.0.1:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-server-3.0.1:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host tleyden5iwx/couchbase-server-3.0.1:latest couchbase-start'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase -v /opt/couchbase/var:/opt/couchbase/var --net=host paulcapestany/couchbase-server-3.0.1:latest couchbase-start'"
                 },
                 {
                     "name":"ExecStop",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster remove-and-rebalance --local-ip $COREOS_PRIVATE_IPV4; sudo docker stop couchbase'"
                 },
                 {
                     "name":"Conflicts",
@@ -705,12 +705,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",
@@ -798,12 +798,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",
@@ -891,12 +891,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name couchbase-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper couchbase-cluster start-couchbase-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",
@@ -974,27 +974,27 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/sync-gateway-coreos:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/sync-gateway-coreos:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host tleyden5iwx/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
+                    "value":"/usr/bin/docker run --net=host paulcapestany/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
+                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core tleyden5iwx/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
+                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core paulcapestany/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
                 },
                 {
                     "name":"ExecStop",
@@ -1072,27 +1072,27 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/sync-gateway-coreos:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/sync-gateway-coreos:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host tleyden5iwx/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
+                    "value":"/usr/bin/docker run --net=host paulcapestany/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
+                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core tleyden5iwx/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
+                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core paulcapestany/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
                 },
                 {
                     "name":"ExecStop",
@@ -1170,27 +1170,27 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/sync-gateway-coreos:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/sync-gateway-coreos:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host tleyden5iwx/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
+                    "value":"/usr/bin/docker run --net=host paulcapestany/sync-gateway-coreos:latest update-wrapper couchbase-cluster wait-until-running"
                 },
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
+                    "value":"/usr/bin/docker run --net=host -v /home/core:/home/core paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-config rewrite --destination /home/core/.sync-gw-config.json"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core tleyden5iwx/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
+                    "value":"/bin/bash -c 'SYNC_GW_COMMIT=$(etcdctl get /couchbase.com/sync-gateway/commit);  /usr/bin/docker run --name sync_gw --net=host -v /home/core:/home/core paulcapestany/sync-gateway-coreos sync-gw-start -c $SYNC_GW_COMMIT -g  /home/core/.sync-gw-config.json'"
                 },
                 {
                     "name":"ExecStop",
@@ -1268,12 +1268,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",
@@ -1351,12 +1351,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",
@@ -1434,12 +1434,12 @@
                 {
                     "name":"ExecStartPre",
                     "section":"Service",
-                    "value":"/usr/bin/docker pull tleyden5iwx/couchbase-cluster-go:latest"
+                    "value":"/usr/bin/docker pull paulcapestany/couchbase-cluster-go:latest"
                 },
                 {
                     "name":"ExecStart",
                     "section":"Service",
-                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host tleyden5iwx/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
+                    "value":"/bin/bash -c '/usr/bin/docker run --name sync-gw-sidekick --net=host paulcapestany/couchbase-cluster-go:latest update-wrapper sync-gw-cluster launch-sidekick --local-ip=$COREOS_PRIVATE_IPV4'"
                 },
                 {
                     "name":"ExecStop",

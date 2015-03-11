@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/docopt/docopt-go"
-	"github.com/tleyden/couchbase-cluster-go"
+	"github.com/paulcapestany/couchbase-cluster-go"
 	"io/ioutil"
 	"log"
 )
