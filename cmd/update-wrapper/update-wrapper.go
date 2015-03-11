@@ -19,7 +19,7 @@ const (
 )
 
 func main() {
-
+	fmt.Println("[STARTING] update-wrapper.go")
 	// connect to etcd and see if we even need to update the code
 	requiresUpdate := checkUpdateRequired()
 

@@ -1,14 +1,14 @@
 package main
 
 import (
-	"log"
-
+	"fmt"
 	"github.com/docopt/docopt-go"
 	"github.com/tleyden/couchbase-cluster-go"
+	"log"
 )
 
 func main() {
-
+	fmt.Println("[STARTING] sync-gw-cluster.go")
 	usage := `Sync-Gw-Cluster.
 
 Usage:

@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-
+	fmt.Println("[STARTING] couchbase-cluster.go")
 	usage := `Couchbase-Cluster.
 
 Usage:

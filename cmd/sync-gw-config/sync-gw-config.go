@@ -1,15 +1,15 @@
 package main
 
 import (
-	"io/ioutil"
-	"log"
-
+	"fmt"
 	"github.com/docopt/docopt-go"
 	"github.com/tleyden/couchbase-cluster-go"
+	"io/ioutil"
+	"log"
 )
 
 func main() {
-
+	fmt.Println("[STARTING] sync-gw-config.go")
 	usage := `Sync-Gw-Config.
 
 Usage:
