@@ -1061,12 +1061,12 @@ func (c CouchbaseCluster) EventLoop() {
 
 // Publish the fact that we are up into etcd.
 func (c CouchbaseCluster) PublishNodeStateEtcd(ttlSeconds uint64) error {
-
+	// TODO: don't hardcode port
+	ipAndPort := fmt.Sprintf("%v:8091", c.LocalCouchbaseIp)
+	log.Printf("PublishNodeStateEtcd = %v", ipAndPort)
 	// the etcd key to use, ie: /couchbase-node-state/<our ip>
 	// TODO: maybe this should be ip:port
 	key := path.Join(KEY_NODE_STATE, c.LocalCouchbaseIp)
-	// TODO: don't hardcode port
-	ipAndPort := fmt.Sprintf("%v:8091", c.LocalCouchbaseIp)
 	_, err := c.etcdClient.Set(key, ipAndPort, ttlSeconds)
 
 	return err

@@ -76,7 +76,7 @@ func data_couchbase_node_service_template() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "data/couchbase_node@.service.template", size: 951, mode: os.FileMode(420), modTime: time.Unix(1426114234, 0)}
+	info := bindata_file_info{name: "data/couchbase_node@.service.template", size: 951, mode: os.FileMode(420), modTime: time.Unix(1426714021, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -96,7 +96,7 @@ func data_couchbase_sidekick_service_template() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "data/couchbase_sidekick@.service.template", size: 862, mode: os.FileMode(420), modTime: time.Unix(1426114234, 0)}
+	info := bindata_file_info{name: "data/couchbase_sidekick@.service.template", size: 862, mode: os.FileMode(420), modTime: time.Unix(1426714021, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -116,7 +116,7 @@ func data_sync_gw_node_service_template() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "data/sync_gw_node@.service.template", size: 1192, mode: os.FileMode(420), modTime: time.Unix(1426114234, 0)}
+	info := bindata_file_info{name: "data/sync_gw_node@.service.template", size: 1192, mode: os.FileMode(420), modTime: time.Unix(1426714021, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -136,7 +136,7 @@ func data_sync_gw_sidekick_service_template() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "data/sync_gw_sidekick@.service.template", size: 793, mode: os.FileMode(420), modTime: time.Unix(1426114234, 0)}
+	info := bindata_file_info{name: "data/sync_gw_sidekick@.service.template", size: 793, mode: os.FileMode(420), modTime: time.Unix(1426714021, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -156,7 +156,7 @@ func data_test_fleet_api_units_json() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "data-test/fleet_api_units.json", size: 54658, mode: os.FileMode(420), modTime: time.Unix(1426114478, 0)}
+	info := bindata_file_info{name: "data-test/fleet_api_units.json", size: 54658, mode: os.FileMode(420), modTime: time.Unix(1426714021, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }

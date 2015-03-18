@@ -358,11 +358,10 @@ func (s SyncGwCluster) EventLoop() {
 }
 
 func (s SyncGwCluster) PublishNodeStateEtcd(ttlSeconds uint64) error {
-
-	key := path.Join(KEY_SYNC_GW_NODE_STATE, s.LocalIp)
-
 	// TODO: don't hardcode port
 	ipAndPort := fmt.Sprintf("%v:4984", s.LocalIp)
+	log.Printf("PublishNodeStateEtcd = %v", ipAndPort)
+	key := path.Join(KEY_SYNC_GW_NODE_STATE, s.LocalIp)
 	_, err := s.etcdClient.Set(key, ipAndPort, ttlSeconds)
 
 	return err
